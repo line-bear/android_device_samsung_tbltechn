@@ -19,10 +19,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/tbltechn/tbltechn-vendor.mk)
 
-# mixer_paths.xml workaround
-PRODUCT_COPY_FILES += \
-    device/samsung/tblte-common/audio/mixer_paths_tblte_eur.xml:system/vendor/etc/mixer_paths.xml
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/tbltechn/overlay
 
@@ -34,3 +30,6 @@ $(call inherit-product, device/samsung/tblte-common/nfc/s3fwrn5/product.mk)
 
 # common tblte
 $(call inherit-product, device/samsung/tblte-common/tblte.mk)
+
+# SuperSu
+WITH_SU=true
