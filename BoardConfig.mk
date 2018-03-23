@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common tbltechn
+# inherit from common tblte
 include device/samsung/tblte-common/BoardConfigCommon.mk
 
 # Assert
