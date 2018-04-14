@@ -15,12 +15,12 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-
+	
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/tblte/tblte-vendor.mk)
-
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/tblte/overlay
+$(call inherit-product-if-exists, vendor/samsung/tbltechn/tbltechn-vendor.mk)
 
 # common tblte
 $(call inherit-product, device/samsung/tblte-common/tblte.mk)
+
+# SuperSu
+WITH_SU=true

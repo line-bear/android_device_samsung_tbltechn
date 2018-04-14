@@ -14,9 +14,13 @@
 # limitations under the License.
 
 # inherit from common tblte
--include device/samsung/tblte-common/BoardConfigCommon.mk
+include device/samsung/tblte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := tblte,tbltedt,tbltecan,tbltespr,tbltetmo,tblteusc,tbltevzw,tbltexx
+# Assert
+TARGET_OTA_ASSERT_DEVICE := tbltechn
+
+# Kernel
+TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_tblte_eur_defconfig
 
 # Camera
 TARGET_FIXUP_PREVIEW := true
@@ -26,4 +30,4 @@ TARGET_INIT_VENDOR_LIB := libinit_tblte
 TARGET_UNIFIED_DEVICE := true
 
 # inherit from the proprietary version
--include vendor/samsung/tblte/BoardConfigVendor.mk
+include vendor/samsung/tbltechn/BoardConfigVendor.mk

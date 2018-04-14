@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/tblte/full_tblte.mk)
+$(call inherit-product, device/samsung/tbltechn/full_tblte.mk)
 
 # Inherit common LineageOS phone.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_DEVICE := tblte
-PRODUCT_NAME := lineage_tblte
+PRODUCT_DEVICE := tbltechn
+PRODUCT_NAME := lineage_tbltechn
